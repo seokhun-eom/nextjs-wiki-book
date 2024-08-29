@@ -107,7 +107,6 @@ const Header = () => {
           </NavLink>
           <NavLink>
             {(() => {
-              // 인증된 상태라면 아이콘을 표시
               if (authUser) {
                 return (
                   <Link href={`/users/${authUser.id}`} passHref>
