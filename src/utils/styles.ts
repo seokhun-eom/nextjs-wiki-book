@@ -149,33 +149,35 @@ function isSpaceThemeKeys(
   prop: unknown,
   theme: AppTheme
 ): prop is SpaceThemeKeys {
-  return typeof prop === "string" && prop in theme.space;
+  return Object.keys(theme.space).filter((key) => key == prop).length > 0;
 }
 
 function isColorThemeKeys(
   prop: unknown,
   theme: AppTheme
 ): prop is ColorThemeKeys {
-  return typeof prop === "string" && prop in theme.colors;
+  return Object.keys(theme.colors).filter((key) => key == prop).length > 0;
 }
 
 function isFontSizeThemeKeys(
   prop: unknown,
   theme: AppTheme
 ): prop is FontSizeThemeKeys {
-  return typeof prop === "string" && prop in theme.fontSizes;
+  return Object.keys(theme.fontSizes).filter((key) => key == prop).length > 0;
 }
 
 function isLetterSpacingThemeKeys(
   prop: unknown,
   theme: AppTheme
 ): prop is LetterSpacingThemeKeys {
-  return typeof prop === "string" && prop in theme.letterSpacings;
+  return (
+    Object.keys(theme.letterSpacings).filter((key) => key == prop).length > 0
+  );
 }
 
 function isLineHeightThemeKeys(
   prop: unknown,
   theme: AppTheme
 ): prop is LineHeightThemeKeys {
-  return typeof prop === "string" && prop in theme.lineHeights;
+  return Object.keys(theme.lineHeights).filter((key) => key == prop).length > 0;
 }
