@@ -1,7 +1,7 @@
 "use client";
 
 import type { NextPage } from "next";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import AppLogo from "@/components/atoms/AppLogo";
 import Box from "@/components/layout/Box";
 import Flex from "@/components/layout/Flex";
@@ -10,12 +10,13 @@ import SigninFormContainer from "@/containers/SigninFormContainer";
 
 const SigninPage: NextPage = () => {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const handleSignin = async (err?: Error) => {
     if (!err) {
-      const redurectTo = (router.query["redirect_to"] as string) ?? "/";
+      const redirectTo = searchParams.get("redirect_to") ?? "/";
 
-      console.log("Redirecting", redurectTo);
-      await router.push(redurectTo);
+      console.log("Redirecting", redirectTo);
+      await router.push(redirectTo);
     }
   };
 
