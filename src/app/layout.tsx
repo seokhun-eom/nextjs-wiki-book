@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
 import "./globals.css";
+import Provider from "./Provider";
 import StyledComponentsRegistry from "@/lib/registry";
 
 export const metadata: Metadata = {
@@ -20,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          <Provider>{children}</Provider>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
