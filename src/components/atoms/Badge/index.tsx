@@ -1,3 +1,5 @@
+"use client";
+
 import styled from "styled-components";
 
 const BadgeWrapper = styled.div<{ backgroundColor: string }>`

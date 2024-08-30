@@ -1,3 +1,5 @@
+"use client";
+
 import Flex from "@/components/layout/Flex";
 
 interface ProductCardCarouselProps {

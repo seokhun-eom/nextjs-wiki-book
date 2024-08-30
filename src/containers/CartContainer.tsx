@@ -1,3 +1,5 @@
+"use client";
+
 import CartProduct from "@/components/organisms/CartProduct";
 import { useGlobalSpinnerActionsContext } from "@/contexts/GlobalSpinnerContext";
 import { useShoppingCartContext } from "@/contexts/ShoppingCartContext";

@@ -1,3 +1,5 @@
+"use client";
+
 import styled from "styled-components";
 import Badge from "@/components/atoms/Badge";
 

@@ -1,3 +1,5 @@
+"use client";
+
 import { Controller, useForm } from "react-hook-form";
 import Button from "@/components/atoms/Button";
 import Input from "@/components/atoms/Input";

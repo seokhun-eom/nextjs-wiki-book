@@ -1,3 +1,5 @@
+"use client";
+
 import ShapeImage from "@/components/atoms/ShapeImage";
 import Text from "@/components/atoms/Text";
 import Box from "@/components/layout/Box";

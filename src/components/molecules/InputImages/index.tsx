@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useCallback, useMemo } from "react";
 import styled from "styled-components";
 import Box from "@/components/layout/Box";

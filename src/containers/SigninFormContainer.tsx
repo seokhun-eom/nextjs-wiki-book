@@ -1,3 +1,5 @@
+"use client";
+
 import SigninForm from "@/components/organisms/SigninForm";
 import { useAuthContext } from "@/contexts/AuthContext";
 import { useGlobalSpinnerActionsContext } from "@/contexts/GlobalSpinnerContext";

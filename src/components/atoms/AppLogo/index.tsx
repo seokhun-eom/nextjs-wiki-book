@@ -1,3 +1,5 @@
+"use client";
+
 const AppLogo = () => (
   <svg
     width="40"

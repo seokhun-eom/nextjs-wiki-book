@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import RectLoader from "@/components/atoms/RectLoader";
 import Box from "@/components/layout/Box";

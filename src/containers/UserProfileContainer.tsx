@@ -1,3 +1,5 @@
+"use client";
+
 import UserProfile from "@/components/organisms/UserProfile";
 import useUser from "@/services/users/use-user";
 import type { ApiContext, User } from "@/types";

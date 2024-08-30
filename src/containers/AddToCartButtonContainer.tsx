@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "@/components/atoms/Button";
 import { useShoppingCartContext } from "@/contexts/ShoppingCartContext";
 import type { Product } from "@/types";

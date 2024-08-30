@@ -1,3 +1,5 @@
+"use client";
+
 import styled, { css } from "styled-components";
 
 const Input = styled.input<{ hasError?: boolean; hasBorder?: boolean }>`
